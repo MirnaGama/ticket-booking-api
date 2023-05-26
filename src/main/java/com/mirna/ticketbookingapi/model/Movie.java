@@ -107,5 +107,13 @@ public class Movie {
 	public void setGenre(String genre) {
 		this.genre = genre;
 	}
+
+	public List<Session> getSessions() {
+		return sessions;
+	}
+
+	public void setSessions(List<Session> sessions) {
+		this.sessions = sessions;
+	}
 	
 }

@@ -41,7 +41,7 @@ public class Session {
 	private List<Booking> bookings;
 	
 	@OneToMany(mappedBy="session")
-	private List<Seat> seats;
+	private List<SessionSeat> seats;
 
 	public Long getId() {
 		return id;
@@ -99,11 +99,11 @@ public class Session {
 		this.bookings = bookings;
 	}
 
-	public List<Seat> getSeats() {
+	public List<SessionSeat> getSeats() {
 		return seats;
 	}
 
-	public void setSeats(List<Seat> seats) {
+	public void setSeats(List<SessionSeat> seats) {
 		this.seats = seats;
 	}
 	

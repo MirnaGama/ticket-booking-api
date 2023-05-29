@@ -74,7 +74,13 @@ public class CinemaRoom {
 	public void setSessions(List<Session> sessions) {
 		this.sessions = sessions;
 	}
-	
-	
+
+	public List<Seat> getSeats() {
+		return seats;
+	}
+
+	public void setSeats(List<Seat> seats) {
+		this.seats = seats;
+	}
 	
 }

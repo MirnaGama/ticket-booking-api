@@ -38,7 +38,7 @@ public class Booking {
 	private Payment payment;
 	
 	@OneToMany(mappedBy="booking")
-	private List<Seat> seats;
+	private List<SessionSeat> sessionSeats;
 
 	public Payment getPayment() {
 		return payment;
@@ -88,11 +88,11 @@ public class Booking {
 		this.session = session;
 	}
 
-	public List<Seat> getSeats() {
-		return seats;
+	public List<SessionSeat> getSessionSeats() {
+		return sessionSeats;
 	}
 
-	public void setReservedSeats(List<Seat> seats) {
-		this.seats = seats;
+	public void setSessionSeats(List<SessionSeat> sessionSeats) {
+		this.sessionSeats = sessionSeats;
 	}
 }
